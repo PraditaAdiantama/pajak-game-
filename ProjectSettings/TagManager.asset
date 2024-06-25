@@ -8,6 +8,11 @@ TagManager:
   - circle
   - triangleTarget
   - triangle
+  - p
+  - a
+  - j
+  - k
+  - missile
   layers:
   - Default
   - TransparentFX

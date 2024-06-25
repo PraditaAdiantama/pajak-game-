@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cloud
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1356
+        width: 1334
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 600, y: 130, z: 600, w: 130}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36921055f7116b844b680fcf0781f48f
+      internalID: -1215435444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plane
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1419
+        width: 529
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30e753013a1d16429eb45bbc43acc8b
+      internalID: 145289027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komodo_instructur
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 495
+        width: 828
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74cdb52044d18b43a6b1bb9cd4655b2
+      internalID: -2009307467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slice5_3
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1057
+        width: 1039
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae03279a638dbc4388e712d48700135
+      internalID: -1712969045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 534
+        width: 197
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 50, y: 200, z: 50, w: 200}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab26a789a5b05a241ae6fb92ce594169
+      internalID: -760519943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 524
+        width: 998
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91bef277e611024a9dd7c7ad8a9263c
+      internalID: 1949311831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 41
+        width: 2089
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 1000, y: 180, z: 1000, w: 180}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c77726b3a4f1a245a409c0ade319617
+      internalID: 1392967255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +266,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      background: -760519943
+      cloud: -1215435444
+      fence: 1392967255
+      komodo_instructur: -2009307467
+      plane: 145289027
+      slice5_3: -1712969045
+      tank: 1949311831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: slice6_0
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1214
+        width: 1481
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7015a37a312de440babc581bc42e42c
+      internalID: -931588854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slice6_1
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1032
+        width: 114
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a87df2c99759e42846851a22668708
+      internalID: 367680570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slice6_2
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 1018
+        width: 295
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f996d168abd885f40a7a34c5b8237b2f
+      internalID: 1818003130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buble_message
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 94
+        width: 1023
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 451, y: 368, z: 445, w: 368}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d92e8687288aa84a97497adf638a0d2
+      internalID: -1916707761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komodo_instructor
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 921
+        height: 1101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d218ef800f1eb7849bad0d00b0019e2e
+      internalID: -780626393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slice6_3
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1028
+        width: 128
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd44c3e2c9a9cee4795d599952657663
+      internalID: 1812617505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slice6_4
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1030
+        width: 96
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b752ba60e6a093d4b9e707543dbe6cb1
+      internalID: -284158691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slice6_5
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 1028
+        width: 130
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639afcf332ef9494e8c1f1f843ca90e2
+      internalID: 1771275327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slice6_6
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 1034
+        width: 106
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a297dd7714fdc4d86ea1f34c06cee9
+      internalID: 615176849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +308,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      buble_message: -1916707761
+      komodo_instructor: -780626393
+      slice6_0: -931588854
+      slice6_1: 367680570
+      slice6_2: 1818003130
+      slice6_3: 1812617505
+      slice6_4: -284158691
+      slice6_5: 1771275327
+      slice6_6: 615176849
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
