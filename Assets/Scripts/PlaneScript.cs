@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,17 +7,20 @@ using UnityEngine;
 public class PlaneScript : MonoBehaviour
 {
     private bool isDragging = false;
-    public GameObject[] hearths;
+    public Vector3[] textPositions;
+    public GameObject dialog, spawner;
     private Vector3 offset;
     private Camera mainCamera;
-    private string finalText = "PAJAK";
-    private int health = 3;
+    private string finalText = "pajak";
+    private Animator animator;
     private string currentText = "";
 
     void Start()
     {
         mainCamera = Camera.main;
+        animator = GetComponent<Animator>();
         GetComponent<Rigidbody2D>().isKinematic = false;
+        PlayerPrefs.SetInt("wordCount", 0);
     }
 
     void OnMouseDown()
@@ -42,7 +46,7 @@ public class PlaneScript : MonoBehaviour
 
             float minX = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + objectWidth / 2;
             float maxX = mainCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - objectWidth / 2;
-            float minY = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + objectHeight / 2;
+            float minY = -0.91f;
             float maxY = mainCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - objectHeight / 2;
 
             newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
@@ -56,13 +60,38 @@ public class PlaneScript : MonoBehaviour
     {
         string tag = other.transform.tag;
 
-        if(tag == "missile")
+        if (tag == "missile")
         {
-            Destroy(hearths[health - 1]);
-            health -= 1;
-        }else
-        {
-            
+            animator.SetTrigger("Damaged");
+            Destroy(other.gameObject);
+            StartCoroutine(Wait());
         }
+        else
+        {
+            if (finalText[currentText.Length].ToString().Trim() == tag)
+            {
+                other.transform.position = textPositions[currentText.Length];
+                other.gameObject.GetComponent<MissileScript>().Stop();
+                currentText += tag;
+                PlayerPrefs.SetInt("wordCount", currentText.Length);
+                if (currentText == "pajak")
+                {
+                    dialog.GetComponent<DialogScript>().Play();
+                    spawner.SetActive(false);
+                }
+            }
+            else
+            {
+                Destroy(other.gameObject);
+            }
+        }
+    }
+
+
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
+
+        animator.SetTrigger("Stop");
     }
 }

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SpawnerScript : MonoBehaviour
 {
-    public GameObject[] objectPrefabs; 
-    public float commonObjectProbability = 0.5f; 
-    public float rareObjectProbability = 0.1f; 
-    public float spawnInterval = 2f;  
-    public float spawnDelay = 0f; 
+    public GameObject[] objectPrefabs;
+    public float commonObjectProbability = 0.5f;
+    public float rareObjectProbability = 0.1f;
+    public float spawnInterval = 2f;
+    public float spawnDelay = 0f;
 
     private float timeSinceLastSpawn;
     private Camera mainCamera;
@@ -26,7 +26,7 @@ public class SpawnerScript : MonoBehaviour
         if (timeSinceLastSpawn >= spawnInterval)
         {
             SpawnObject();
-            timeSinceLastSpawn = 0f; 
+            timeSinceLastSpawn = 0f;
         }
     }
 
@@ -36,8 +36,8 @@ public class SpawnerScript : MonoBehaviour
 
         if (randomValue < commonObjectProbability)
         {
-            int randomIndex = Random.Range(0, objectPrefabs.Length - 1);
-            Instantiate(objectPrefabs[randomIndex], GetRandomSpawnPosition(), Quaternion.identity);
+            int wordIndex = PlayerPrefs.GetInt("wordCount");
+            Instantiate(objectPrefabs[wordIndex], GetRandomSpawnPosition(), Quaternion.identity);
         }
         else if (randomValue < commonObjectProbability + rareObjectProbability)
         {
@@ -47,7 +47,7 @@ public class SpawnerScript : MonoBehaviour
 
     Vector3 GetRandomSpawnPosition()
     {
-        float randomY = Random.Range(-1f, 4f); 
+        float randomY = Random.Range(-1f, 4f);
 
         return new Vector3(transform.position.x, randomY, transform.position.z);
     }

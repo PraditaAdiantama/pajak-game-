@@ -5,6 +5,7 @@ using UnityEngine;
 public class MissileScript : MonoBehaviour
 {
     public float speed = 5f;
+    private bool stop = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,10 @@ public class MissileScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        if (stop == false)
+        {
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
+        }
     }
 
     bool IsVisible()
@@ -31,5 +35,10 @@ public class MissileScript : MonoBehaviour
         }
         return false;
     }
-    
+
+    public void Stop()
+    {
+        stop = true;
+    }
+
 }

@@ -6,6 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/WelcomeScene.unity
+    guid: 988f91b11ca16774791ad5062770c571
+  - enabled: 1
+    path: Assets/Scenes/WaroengScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/CasieirScene.unity
+    guid: 659065bf3cb83db4eb7dbc6e6e40e16e
+  - enabled: 1
+    path: Assets/Scenes/RecieptScene.unity
+    guid: e37b5ccea970d9d479858c8459200a7e
+  - enabled: 1
+    path: Assets/Scenes/AlusistaScene.unity
+    guid: fb494bcdd8949ee46a0efa6863c21692
+  - enabled: 1
+    path: Assets/Scenes/EatingScene.unity
+    guid: d518e259b44ac3545aff9e10641e25d9
+  - enabled: 1
+    path: Assets/Scenes/PlaneMinigamesScene.unity
+    guid: 4c26447bca6e66444afbeb981f8f3104
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: 8b55de6b373069f49a444045b28a6223
+  - enabled: 1
+    path: Assets/Scenes/SchoolScene.unity
+    guid: ba4a7862fb11e7f40ab02c51b5b7a1be
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 88931055042127c42bf1bbf4192a1081
   m_configObjects: {}

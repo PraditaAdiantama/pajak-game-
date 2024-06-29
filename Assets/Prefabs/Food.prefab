@@ -88,10 +88,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7690920618329707406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52af1946cc23fe9469e48d72bac02ace, type: 3}
+  m_Script: {fileID: 11500000, guid: b69f2d7811971d4428a9c55f9293d071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 0}
+  orderButton: {fileID: 0}
 --- !u!61 &1943515176019472872
 BoxCollider2D:
   m_ObjectHideFlags: 0

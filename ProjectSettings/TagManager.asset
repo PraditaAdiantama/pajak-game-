@@ -4,15 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - circleTarget
-  - circle
-  - triangleTarget
-  - triangle
   - p
   - a
   - j
   - k
   - missile
+  - book
+  - orange
+  - purple
+  - green
+  - orangeTarget
+  - purpleTarget
+  - greenTarget
+  - tank
+  - tankTarget
   layers:
   - Default
   - TransparentFX
