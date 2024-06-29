@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 214847348387882043, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.7982025
+      objectReference: {fileID: 0}
     - target: {fileID: 1117315818525219739, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -331,6 +335,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 214847348387882043, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.7982025
+      objectReference: {fileID: 0}
     - target: {fileID: 1117315818525219739, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -486,10 +494,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1865023160}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 259, y: -276}
-  m_SizeDelta: {x: 100, y: 105.1308}
+  m_AnchorMin: {x: 0.75100005, y: 0.0132626}
+  m_AnchorMax: {x: 1, y: 0.44165254}
+  m_AnchoredPosition: {x: 7.5000305, y: -173}
+  m_SizeDelta: {x: -67, y: -56.8692}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &948676276
 MonoBehaviour:
@@ -1010,7 +1018,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2839589420396366462, guid: 4a5b19aa4e7d9b54c93e28d0fd622ad6, type: 3}
       propertyPath: targetScene
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2839589420396366462, guid: 4a5b19aa4e7d9b54c93e28d0fd622ad6, type: 3}
       propertyPath: startAnimation
@@ -1141,7 +1149,7 @@ MonoBehaviour:
   - {fileID: 8565154229414631585, guid: 34728b8e74fa4934d904149699eb4271, type: 3}
   - {fileID: 1627358611310646110, guid: 63632ce8a96e9614b8a1fc09d61e2ed4, type: 3}
   - {fileID: 7468306676726626456, guid: d94af9f4a93742a4d8a3f45f7110fe61, type: 3}
-  commonObjectProbability: 0.5
+  commonObjectProbability: 0.2
   rareObjectProbability: 2
   spawnInterval: 3
   spawnDelay: 0

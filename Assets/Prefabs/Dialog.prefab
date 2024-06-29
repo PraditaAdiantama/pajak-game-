@@ -134,10 +134,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4682397343771527998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -212.2, y: 20.8}
-  m_SizeDelta: {x: 116.5883, y: 32.2668}
+  m_AnchorMin: {x: 0.057532717, y: 0.6105871}
+  m_AnchorMax: {x: 0.24700001, y: 0.8463696}
+  m_AnchoredPosition: {x: 0.7999878, y: -0.7982006}
+  m_SizeDelta: {x: 0.5883, y: 1.5965004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7363743968028985692
 CanvasRenderer:
@@ -194,10 +194,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 27.75
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -275,10 +275,10 @@ RectTransform:
   - {fileID: 4447659425961652666}
   m_Father: {fileID: 1117315818525219739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.7985, y: -115.14588}
-  m_SizeDelta: {x: 612.403, y: 135.6917}
+  m_AnchorMin: {x: 0.040417902, y: 0.019864725}
+  m_AnchorMax: {x: 0.95967174, y: 0.37}
+  m_AnchoredPosition: {x: -1.7984924, y: 0}
+  m_SizeDelta: {x: -3.5969849, y: 3.6916962}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4247004213773679486
 CanvasRenderer:
@@ -526,10 +526,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4682397343771527998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5048987, y: 0.5}
-  m_AnchoredPosition: {x: 5.2, y: -19.1656}
-  m_SizeDelta: {x: 550.1519, y: 20.5314}
+  m_AnchorMin: {x: 0.057532717, y: 0.05163041}
+  m_AnchorMax: {x: 0.96400005, y: 0.5663264}
+  m_AnchoredPosition: {x: 0.2000122, y: 6.8344}
+  m_SizeDelta: {x: -1.8480835, y: -49.468597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4368341140994568612
 CanvasRenderer:
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -16.836372, z: 0, w: -32.293915}
+  m_margin: {x: 0, y: -16.836372, z: 0, w: 5.81929}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

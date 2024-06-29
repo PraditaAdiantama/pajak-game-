@@ -251,6 +251,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 214847348387882043, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.7982025
+      objectReference: {fileID: 0}
     - target: {fileID: 1117315818525219739, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -344,6 +348,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2085684883}
     - target: {fileID: 4071251318063042377, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
+      propertyPath: messages.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071251318063042377, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: messages.Array.data[0]
       value: Jibi :Ayah, harga mainanku ini kan 85.0000.00, kok tadi bayarnya 93.500.00?
       objectReference: {fileID: 0}
@@ -354,6 +362,18 @@ PrefabInstance:
     - target: {fileID: 4071251318063042377, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: messages.Array.data[2]
       value: 'Jibi : oh iya.. jadi apa itu PPn Ayah??'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071251318063042377, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
+      propertyPath: messages.Array.data[3]
+      value: Pak Jali :PPN adalah pajak yang ditambahkan pada harga barang atau jasa
+        yang kita beli. Misalnya, jika kamu membeli mainan seharga Rp 100.000, dengan
+        PPN 10%, kamu akan membayar Rp 110.000.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071251318063042377, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
+      propertyPath: messages.Array.data[4]
+      value: Pak Jali :Pajak ini digunakan oleh pemerintah untuk membangun jalan,
+        sekolah, dan rumah sakit. Jadi, setiap kali kita membeli sesuatu, sedikit
+        uang tambahan itu membantu negara kita jadi lebih baik.
       objectReference: {fileID: 0}
     - target: {fileID: 4447659425961652666, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: m_SizeDelta.y
@@ -840,7 +860,7 @@ SpriteRenderer:
   m_Size: {x: 26.84, y: 6.2409625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &897799218
@@ -1540,7 +1560,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2839589420396366462, guid: 4a5b19aa4e7d9b54c93e28d0fd622ad6, type: 3}
       propertyPath: targetScene
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2839589420396366462, guid: 4a5b19aa4e7d9b54c93e28d0fd622ad6, type: 3}
       propertyPath: startAnimation

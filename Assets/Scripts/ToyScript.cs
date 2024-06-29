@@ -44,7 +44,7 @@ public class ToyScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, 
         }
         else
         {
-            StartCoroutine(CenterOnTarget());
+            gameObject.SetActive(false);
         }
     }
 
@@ -57,16 +57,19 @@ public class ToyScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, 
             if (thisRectTransform.CompareTag("Untagged")) return false;
             if (collider.CompareTag(thisRectTransform.tag + "Target"))
             {
+                collider.GetComponent<Image>().color = Color.white;
+
                 int orderDone = PlayerPrefs.GetInt("orderDone");
 
                 targetRectTransform = collider.GetComponent<RectTransform>();
 
                 PlayerPrefs.SetInt("orderDone", orderDone += 1);
 
-                if(orderDone >= 1){
+                if (orderDone >= 1)
+                {
                     orderButton.alpha = 1;
                 }
-                
+
                 return true;
             }
         }
@@ -74,11 +77,4 @@ public class ToyScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, 
         return false;
     }
 
-    IEnumerator CenterOnTarget()
-    {
-        thisRectTransform.sizeDelta = new Vector2(targetRectTransform.rect.width, targetRectTransform.rect.height);
-        thisRectTransform.anchoredPosition = targetRectTransform.anchoredPosition;
-
-        yield return new WaitForSeconds(1);
-    }
 }

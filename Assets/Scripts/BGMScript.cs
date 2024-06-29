@@ -6,11 +6,23 @@ public class BGMScript : MonoBehaviour
 {
     private Animator animator;
     public AudioSource audioSource;
+    private static AudioSource instance;
 
     private void Awake()
     {
+        // Implement Singleton pattern
+        if (instance == null)
+        {
+            instance = audioSource;
+            DontDestroyOnLoad(audioSource);  // Use gameObject to persist the entire object
+        }
+        else if (instance != audioSource)
+        {
+            Destroy(audioSource.gameObject);  // Destroy duplicate instance
+            return;
+        }
+
         animator = GetComponent<Animator>();
-        DontDestroyOnLoad(audioSource);
     }
 
     public void Mute()

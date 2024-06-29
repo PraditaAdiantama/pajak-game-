@@ -768,7 +768,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2839589420396366462, guid: 4a5b19aa4e7d9b54c93e28d0fd622ad6, type: 3}
       propertyPath: targetScene
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2839589420396366462, guid: 4a5b19aa4e7d9b54c93e28d0fd622ad6, type: 3}
       propertyPath: startAnimation

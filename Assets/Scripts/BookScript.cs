@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEditorInternal;
 
 public class BookScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
     private RectTransform thisRectTransform, targetRectTransform;
+    public TransitionScript transition;
     private CanvasGroup canvasGroup;
     private Canvas canvas;
     private Vector2 thisOriginalPostion;
@@ -56,11 +58,17 @@ public class BookScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
             if (thisRectTransform.CompareTag("Untagged")) return false;
             if (collider.CompareTag(thisRectTransform.tag + "Target"))
             {
-                int orderDone = PlayerPrefs.GetInt("orderDone");
+                int orderDone = PlayerPrefs.GetInt("bookDone");
 
                 collider.GetComponent<CanvasGroup>().alpha = 1f;
 
+                if (orderDone >= 2)
+                {
+                    transition.PlayAnim();
+                }
+
                 PlayerPrefs.SetInt("bookDone", orderDone += 1);
+
 
                 return true;
             }

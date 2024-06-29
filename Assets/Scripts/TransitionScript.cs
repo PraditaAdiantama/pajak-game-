@@ -20,13 +20,12 @@ public class TransitionScript : MonoBehaviour
 
     public void PlayAnim()
     {
-        animator.enabled = true;
+        animator.SetTrigger("Start");
         StartCoroutine(Wait());
     }
 
     IEnumerator Wait()
     {
-        animator.SetTrigger("Start");
 
         yield return new WaitForSeconds(1);
 
