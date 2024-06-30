@@ -3,10 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Welcome : MonoBehaviour
 {
-    public int targetScene;
-
-    public void Play()
+    public void Start()
     {
-        SceneManager.LoadScene(7);
-    }
+        // PlayerPrefs.SetString("soundSetting", "play");
+   }
 }

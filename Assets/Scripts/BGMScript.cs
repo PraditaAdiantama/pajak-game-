@@ -18,12 +18,28 @@ public class BGMScript : MonoBehaviour
         }
         else if (instance != audioSource)
         {
-            Destroy(audioSource.gameObject);  // Destroy duplicate instance
-            return;
+            Destroy(instance.gameObject);  // Destroy duplicate instance
         }
 
         animator = GetComponent<Animator>();
     }
+
+    private void Start()
+    {
+        // Initialize the audioSource based on the sound setting
+        string soundStatus = PlayerPrefs.GetString("soundSetting");
+
+        if (soundStatus == "mute")
+        {
+            audioSource.Pause();
+            animator.SetTrigger("Mute");
+        }
+        else
+        {
+            audioSource.Play();
+        }
+    }
+
 
     public void Mute()
     {
