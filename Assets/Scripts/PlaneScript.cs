@@ -14,6 +14,7 @@ public class PlaneScript : MonoBehaviour
     private string finalText = "pajak";
     private Animator animator;
     private string currentText = "";
+    public ParticleSystem particleSystem;
 
     void Start()
     {
@@ -62,6 +63,7 @@ public class PlaneScript : MonoBehaviour
 
         if (tag == "missile")
         {
+            particleSystem.Stop();
             animator.SetTrigger("Damaged");
             Destroy(other.gameObject);
             StartCoroutine(Wait());
@@ -93,5 +95,6 @@ public class PlaneScript : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         animator.SetTrigger("Stop");
+        particleSystem.Play();
     }
 }

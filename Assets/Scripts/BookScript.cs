@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class BookScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
     private RectTransform thisRectTransform, targetRectTransform;
-    public TransitionScript transition;
+    public GameObject enabledObject, disabledObject;
     private CanvasGroup canvasGroup;
     private Canvas canvas;
     private Vector2 thisOriginalPostion;
@@ -63,7 +63,7 @@ public class BookScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
 
                 if (orderDone >= 2)
                 {
-                    transition.PlayAnim();
+                    StartCoroutine(End());
                 }
 
                 PlayerPrefs.SetInt("bookDone", orderDone += 1);
@@ -82,5 +82,14 @@ public class BookScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
         gameObject.SetActive(false);
 
         yield return new WaitForSeconds(1);
+    }
+
+    IEnumerator End()
+    {
+        enabledObject.SetActive(true);
+
+        yield return new WaitForSeconds(1);
+
+        disabledObject.SetActive(false);
     }
 }

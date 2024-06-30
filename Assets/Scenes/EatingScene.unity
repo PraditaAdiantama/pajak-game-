@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 66110481}
   - component: {fileID: 66110480}
+  - component: {fileID: 66110482}
   m_Layer: 0
   m_Name: chicken (1)
   m_TagString: Untagged
@@ -206,6 +207,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &66110482
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66110479}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &288166246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5720185103875882305, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
@@ -391,6 +413,10 @@ PrefabInstance:
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
       objectReference: {fileID: 0}
+    - target: {fileID: 8911182523023661390, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -433,6 +459,14 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 7517016160277015445, guid: 56ec80d036b8a3240934ebc341269280, type: 2}
     value: {fileID: 288166247}
+  - key: {fileID: 2890954471887614728, guid: 56ec80d036b8a3240934ebc341269280, type: 2}
+    value: {fileID: 1665601907}
+  - key: {fileID: 4979741376384183191, guid: 56ec80d036b8a3240934ebc341269280, type: 2}
+    value: {fileID: 66110482}
+  - key: {fileID: 2066810934011846678, guid: 56ec80d036b8a3240934ebc341269280, type: 2}
+    value: {fileID: 754786968}
+  - key: {fileID: 3971037983872959766, guid: 56ec80d036b8a3240934ebc341269280, type: 2}
+    value: {fileID: 2093341877}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &431681841
@@ -636,6 +670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 754786967}
   - component: {fileID: 754786966}
+  - component: {fileID: 754786968}
   m_Layer: 0
   m_Name: chicken
   m_TagString: Untagged
@@ -710,6 +745,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &754786968
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754786965}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &825584552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1243,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1949311831, guid: 706af6c9a3a0ee9409b2f8fd9c85695d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1308,6 +1364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1665601906}
   - component: {fileID: 1665601905}
+  - component: {fileID: 1665601907}
   m_Layer: 0
   m_Name: right_hand
   m_TagString: Untagged
@@ -1382,6 +1439,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1665601907
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665601904}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1720869291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,6 +1554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2069680429}
   - component: {fileID: 2069680428}
+  - component: {fileID: 2069680430}
   m_Layer: 0
   m_Name: jalak_mom
   m_TagString: Untagged
@@ -1523,7 +1602,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: -2147385724, guid: 3a65b74e64c188f4bae2fc7a1826215d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1544,12 +1623,33 @@ Transform:
   m_GameObject: {fileID: 2069680427}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.29, y: 2.51, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.29, y: 2.3429, z: 0}
+  m_LocalScale: {x: 1, y: 0.9326, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2069680430
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069680427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2bd527345fa9c5d40a18c5f01bbcf533, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2085684882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1670,6 +1770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2093341876}
   - component: {fileID: 2093341875}
+  - component: {fileID: 2093341877}
   m_Layer: 0
   m_Name: chicken (2)
   m_TagString: Untagged
@@ -1717,7 +1818,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -550950613, guid: 3a65b74e64c188f4bae2fc7a1826215d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1744,6 +1845,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2093341877
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093341874}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

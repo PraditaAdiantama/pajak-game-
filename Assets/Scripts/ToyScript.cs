@@ -65,9 +65,10 @@ public class ToyScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, 
 
                 PlayerPrefs.SetInt("orderDone", orderDone += 1);
 
-                if (orderDone >= 1)
+                if (orderDone > 2)
                 {
                     orderButton.alpha = 1;
+                    orderButton.blocksRaycasts = true;
                 }
 
                 return true;

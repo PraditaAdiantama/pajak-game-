@@ -154,10 +154,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1591641788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 26.4}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.015000001, y: 0.4283475}
+  m_AnchorMax: {x: 0.9795075, y: 0.69900006}
+  m_AnchoredPosition: {x: 2, y: 2.4000015}
+  m_SizeDelta: {x: 24, y: 274}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96793109
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Setiap Warga Negara Membayar Pajak Guna Membangun Bangsa"'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 35e54c6bff3cc0e478f29075c7487ab7, type: 2}
   m_sharedMaterial: {fileID: -3096168455543624028, guid: 35e54c6bff3cc0e478f29075c7487ab7, type: 2}
@@ -290,10 +290,10 @@ RectTransform:
   - {fileID: 995713091}
   m_Father: {fileID: 1591641788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.9, y: -129.84854}
-  m_SizeDelta: {x: 160, y: 49.6972}
+  m_AnchorMin: {x: 0.38200003, y: 0.09287268}
+  m_AnchorMax: {x: 0.61526865, y: 0.20965254}
+  m_AnchoredPosition: {x: -0.9000015, y: 1.1514587}
+  m_SizeDelta: {x: 4, y: 5.6972046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &827857037
 MonoBehaviour:
@@ -555,10 +555,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1591641788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.8, y: -57.3}
-  m_SizeDelta: {x: 100, y: 50}
+  m_AnchorMin: {x: 0.41200003, y: 0.277}
+  m_AnchorMax: {x: 0.56147766, y: 0.40450925}
+  m_AnchoredPosition: {x: 0.19999695, y: 2.699997}
+  m_SizeDelta: {x: 0, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065924001
 MonoBehaviour:
@@ -768,7 +768,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2839589420396366462, guid: 4a5b19aa4e7d9b54c93e28d0fd622ad6, type: 3}
       propertyPath: targetScene
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2839589420396366462, guid: 4a5b19aa4e7d9b54c93e28d0fd622ad6, type: 3}
       propertyPath: startAnimation
@@ -886,6 +886,7 @@ GameObject:
   - component: {fileID: 1591641787}
   - component: {fileID: 1591641786}
   - component: {fileID: 1591641785}
+  - component: {fileID: 1591641789}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -978,6 +979,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1591641789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591641784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c50cfa2d4fdb94c98b076c1b6609d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quotes:
+  - '"Setiap Warga Negara Membayar Pajak Guna Membangun Bangsa"'
+  - '"Pajak adalah harga yang kita bayar untuk masyarakat yang beradab."'
+  - '"Pajak bukanlah beban, melainkan investasi kita untuk masa depan yang lebih
+    baik."'
+  - '"Kekuatan sebuah negara terletak pada kemampuan warganya untuk memenuhi kewajiban
+    pajak dengan kesadaran dan tanggung jawab."'
 --- !u!1001 &1816570755
 PrefabInstance:
   m_ObjectHideFlags: 0

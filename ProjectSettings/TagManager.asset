@@ -18,6 +18,10 @@ TagManager:
   - greenTarget
   - tank
   - tankTarget
+  - plane
+  - planeTarget
+  - ambulance
+  - ambulanceTarget
   layers:
   - Default
   - TransparentFX

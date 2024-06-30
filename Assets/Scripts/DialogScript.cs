@@ -12,10 +12,19 @@ public class DialogScript : MonoBehaviour
     public GameObject parent;
     private AudioSource audioSource;
     public GameObject targetScene, disabledScene, transition;
+    public bool autoPlay = false;
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+    }
+
+    void Start()
+    {
+        if(autoPlay)
+        {
+            Play();
+        }
     }
 
     public void Play()
@@ -35,7 +44,6 @@ public class DialogScript : MonoBehaviour
             for (int i = 0; i < dialog[1].Length; i++)
             {
                 messageTMP.text += dialog[1][i];
-                audioSource.Play();
 
                 yield return new WaitForSeconds(textDelay);
             }
