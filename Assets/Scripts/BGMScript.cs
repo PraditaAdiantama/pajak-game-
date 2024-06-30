@@ -14,13 +14,13 @@ public class BGMScript : MonoBehaviour
         if (instance == null)
         {
             instance = audioSource;
-            DontDestroyOnLoad(audioSource);  // Use gameObject to persist the entire object
         }
         else if (instance != audioSource)
         {
             Destroy(instance.gameObject);  // Destroy duplicate instance
         }
 
+        DontDestroyOnLoad(audioSource);  // Use gameObject to persist the entire object
         animator = GetComponent<Animator>();
     }
 

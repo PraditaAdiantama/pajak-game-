@@ -712,7 +712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8786310591997116680, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: m_margin.w
-      value: -3.0267906
+      value: -13.646374
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1152,7 +1152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8786310591997116680, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: m_margin.w
-      value: 20.18186
+      value: -15.659197
       objectReference: {fileID: 0}
     - target: {fileID: 8786310591997116680, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: m_margin.z
@@ -2610,6 +2610,14 @@ PrefabInstance:
       value: Pak Udak:Yuk mulai bagikan sekarang!
       objectReference: {fileID: 0}
     - target: {fileID: 4447659425961652666, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.50964224
+      objectReference: {fileID: 0}
+    - target: {fileID: 4447659425961652666, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.7417779
+      objectReference: {fileID: 0}
+    - target: {fileID: 4447659425961652666, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: m_SizeDelta.x
       value: -1.8481
       objectReference: {fileID: 0}
@@ -2618,12 +2626,16 @@ PrefabInstance:
       value: -10.894
       objectReference: {fileID: 0}
     - target: {fileID: 4447659425961652666, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.18218994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4447659425961652666, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12.453
+      value: -15.086911
       objectReference: {fileID: 0}
     - target: {fileID: 8786310591997116680, guid: 38771a3de4704194199756ab2e0d4df2, type: 3}
       propertyPath: m_margin.w
-      value: 20.18186
+      value: -14.331764
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
